@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9AB2CC"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView android:id="@+id/txt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="60dp"
+        android:textSize="32sp"
+        android:textStyle="normal"
+
+
+        />
+
+
+    <EditText android:id="@+id/edt_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:drawableStart="@drawable/contato"
+        android:hint="Nome Completo"
+        app:layout_constraintTop_toBottomOf="@id/txt_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/white"
+        />
+
+    <EditText android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="84dp"
+        android:drawableStart="@drawable/email"
+        android:hint="Email"
+        app:layout_constraintStart_toEndOf="@+id/edt_nome"
+        app:layout_constraintTop_toBottomOf="@+id/edt_nome"
+        android:background="@color/white"/>
+
+    <EditText android:id="@+id/edt_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="84dp"
+        android:drawableStart="@drawable/senha"
+        android:hint="Senha"
+       app:layout_constraintStart_toEndOf="@+id/edt_email"
+        app:layout_constraintTop_toBottomOf="@+id/edt_email"
+        android:background="@color/white"/>
+
+    <Button android:id="@+id/bnt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edt_senha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"
+        android:text="LOGIN"
+        android:backgroundTint="#2E4CCC"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/bnt_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="23dp"
+        android:text="Esqueceu a senha"
+        android:backgroundTint="#2E4CCC"
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
